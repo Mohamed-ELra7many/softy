@@ -2,9 +2,15 @@
 
 let IconMenu = document.querySelector(".menu")
 let NavMenu = document.querySelector(".nav-menu")
+let NavMenuLink = document.querySelectorAll(".nav-menu a")
 
-IconMenu.addEventListener("click", ()=>{
+IconMenu.addEventListener("click", (e)=>{
     NavMenu.classList.toggle("visabl")
+    NavMenuLink.forEach((item)=>{
+        item.addEventListener("click", (e)=>{
+            NavMenu.classList.remove("visabl")
+        })
+    })
 })
 }
 
