@@ -773,7 +773,7 @@ header .container .nav-menu li a.active{
 
 footer{
     background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
-    padding: 77px 0;
+    padding: 40px 0;
 }
 footer .icons{
     display: flex;
